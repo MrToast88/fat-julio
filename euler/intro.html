@@ -1,0 +1,60 @@
+<!-- 
+  
+  This is an HTML file. You can edit this by opening it up in Sublime
+  and view what it does by opening it in a browser like Chrome. There are
+  other ways to run raw javascript, but javascript got its start in the browser
+  so it's probably the easiest way to go if you don't want to have to install
+  anything like node.js to run javascript directly. Plus you can practice some
+  HTML stuff too. Never hurts.
+
+  Specific steps:
+  - Pull in this pull request
+  - Pull the changes down to your local computer
+  - Open the fat-julio project in finder and drag a .html file to Chrome to
+    view it
+  - Also open the folder in Sublime and try making some changes to the file
+    you're viewing
+  - Reload the page in Chrome to see what your changes did
+
+  You don't actually need iTerm in the mix yet if you're working in the browser.
+
+-->
+
+<!-- 
+  FYI: These arrows represent an HTML comment. The browser will ignore them.
+  They are just for your information.
+-->
+
+<!--
+  This is just some basic HTML. You probably want to start off with a template
+  something like this for your other pages.
+-->
+<html>
+  <!--
+    The head section is where meta-information like the page title, language,
+    css stylesheets and links to external javascript files go.
+
+    For instance:
+  -->
+  <head>
+    <title>Intro to in-browser Javascript</title>
+  </head>
+
+  <!-- The body section is for the actual content of the page -->
+  <body>
+    <h1>Yo</h1>
+    <p id="text">Here is a paragraph with id set to text</p>
+
+    <!--
+      This is some javascript. Usually this would be in another file, but this
+      is fine getting started.
+    -->
+    <script type="text/javascript">
+      var answer = 1 + 1;
+      alert("You can display information by alerting it: 1 + 1 = " + answer);
+
+      document.getElementById("text").innerHTML =
+        "You can also display information by using javascript to change HTML"
+    </script>
+  </body>
+</script>
